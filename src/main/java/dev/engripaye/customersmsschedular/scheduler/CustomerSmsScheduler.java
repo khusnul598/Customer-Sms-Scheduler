@@ -21,5 +21,7 @@ public class CustomerSmsScheduler {
     @Scheduled(cron = "0 0 22 * * ?")
     public void sendDailySms(){
 
+
+
     }
 }
