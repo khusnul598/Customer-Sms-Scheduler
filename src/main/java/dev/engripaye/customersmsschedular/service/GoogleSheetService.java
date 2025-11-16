@@ -44,4 +44,9 @@ public class GoogleSheetService {
 
         return response.getValues();
     }
+
+    public void UpdateLastSent(int rowIndex, String date) throws Exception{
+        FileInputStream serviceAccountStream = new FileInputStream(serviceAccountPath);
+        ServiceAccountCredentials credentials = ServiceAccountCredentials.fromStream(serviceAccountStream);
+    }
 }
