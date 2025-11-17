@@ -42,7 +42,7 @@ public class SmsService {
 
             HttpEntity<Map<String, Object>> request = new HttpEntity<>(body, headers);
 
-            // Send SMS via Termii
+            // Send SMS via Termii message
             restTemplate.postForObject(smsUrl, request, String.class);
 
             System.out.println("SMS sent to " + toNumber);
